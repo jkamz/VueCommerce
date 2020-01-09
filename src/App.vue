@@ -2,7 +2,7 @@
   <div id="app">
     <nav>
       <div class="container">
-        <ul class="nav__left">
+        <ul class="nav-left">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/cart">Cart</router-link></li>
         </ul>
