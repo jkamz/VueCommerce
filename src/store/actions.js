@@ -15,6 +15,14 @@ export const productActions = {
         axios.get(API_URL).then(res => {
             commit(ALL_PRODUCTS_SUCCESS, res.data)
         })
+    },
+
+    oneProduct ({commit, getters}, payload) {
+        commit(ONE_PRODUCT)
+
+        const product = getters.oneProduct(payload)
+        console.log("productss", product)
+        commit(ONE_PRODUCT_SUCCESS, product)
     }
 }
 

@@ -28,7 +28,7 @@ export const productMutations = {
 export const cartMutations = {
     [ADD_TO_CART]: (state, payload) => state.cart.push(payload),
     [REMOVE_FROM_CART]: (state, payload) => {
-        const index = state.cart.findIndex(item => item._id === payload)
+        const index = state.cart.findIndex(item => item.id === payload)
         state.cart.splice(index, 1)
     }
 }

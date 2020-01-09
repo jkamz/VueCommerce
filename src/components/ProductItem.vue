@@ -1,9 +1,9 @@
 <template>
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <div class="product">
-            <router-link :to="'/'+product.id">
+            <router-link :to="'/view/'+product.id">
                 <div class="product-image">
-                    <img :src="product.imageUrls[0]" alt="product" class="img-responsive">
+                    <img :src="product.imageUrls" alt="product" class="img-responsive">
                 </div>
                 <div class="product-desc">
                     <div class="product-info">

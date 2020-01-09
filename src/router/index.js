@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
 import Home from '@/pages/Home';
 import Cart from '@/pages/Cart';
+import ProductDetails from '@/pages/ProductDetails'
 
 Vue.use(Router);
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/cart',
       name: 'Cart',
       component: Cart,
+    },
+    {
+      path: '/view/:id',
+      name: 'Details',
+      component: ProductDetails,
     },
   ],
 });
