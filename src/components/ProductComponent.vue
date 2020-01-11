@@ -11,7 +11,7 @@
                         <p>{{product.description}}</p>
                     </div>
                     <div class="product-details-cart">
-                        <p>${{product.price}}</p>
+                        <p>Ksh {{product.price}}</p>
                         <cart-button :product="product"></cart-button>
                     </div>
                 </div>
@@ -31,3 +31,27 @@ export default {
     }
 }
 </script>
+
+<style>
+  .product-details {
+    border-bottom: 2px solid #F5F5F5;
+    padding: 30px 0;
+  }
+
+  .product-details-desc {
+    padding-top: 30px;
+  }
+
+  .product-details-desc h3 {
+    margin: 5px 0 30px 0;
+  }
+  .product-details-cart {
+    display: flex;
+    padding-top: 30px;
+  }
+  .product-details-cart p {
+    flex-grow: 2;
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>
