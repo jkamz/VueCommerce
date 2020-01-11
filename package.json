@@ -8,10 +8,13 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^0.19.1",
+    "express": "^4.17.1",
+    "serve-static": "^1.14.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.2"
